@@ -8,7 +8,7 @@ import deepchem
 logger = logging.getLogger(__name__)
 
 DEFAULT_DIR = deepchem.utils.get_data_dir()
-cidals_URL = "/deepchem/cidals.csv"
+cidals_URL = "cidals.csv"
 
 
 def load_cidals(featurizer='ECFP',
@@ -52,8 +52,8 @@ def load_cidals(featurizer='ECFP',
     save_folder = os.path.join(save_folder, str(split))
 
   dataset_file = os.path.join(data_dir, "cidals.csv")
-  if not os.path.exists(dataset_file):
-    deepchem.utils.download_url(url=cidals_URL, dest_dir=data_dir)
+  #if not os.path.exists(dataset_file):
+   # deepchem.utils.download_url(url=cidals_URL, dest_dir=data_dir)
 
   dataset = deepchem.utils.save.load_from_disk(dataset_file)
   logger.info("Columns of dataset: %s" % str(dataset.columns.values))
