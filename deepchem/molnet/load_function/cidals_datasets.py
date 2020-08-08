@@ -8,7 +8,7 @@ import deepchem
 logger = logging.getLogger(__name__)
 
 DEFAULT_DIR = deepchem.utils.get_data_dir()
-cidals_URL = "/content/deepchem/cidals.csv"
+cidals_URL = "/deepchem/cidals.csv"
 
 
 def load_cidals(featurizer='ECFP',
