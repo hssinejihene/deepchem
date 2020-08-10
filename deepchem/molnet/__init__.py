@@ -24,6 +24,8 @@ from deepchem.molnet.load_function.sider_datasets import load_sider
 
 from deepchem.molnet.load_function.cidals_datasets import load_cidals
 
+from deepchem.molnet.load_function.test import load_csv
+
 from deepchem.molnet.load_function.sweetlead_datasets import load_sweet
 from deepchem.molnet.load_function.tox21_datasets import load_tox21
 from deepchem.molnet.load_function.toxcast_datasets import load_toxcast
